@@ -1,0 +1,11 @@
+.section-home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-partidos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,77 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 35rem;
+  margin: 0 auto;
+  background-color: var(--color-gray);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+form .form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Input File */
+.file-select {
+  position: relative;
+  display: inline-block;
+}
+
+.file-select::before {
+  background-color: var(--color-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  content: 'Seleccionar';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
+#src-file::before {
+  content: 'Sube una foto';
+}
+/* End Input File */
+
+/* Preview Image */
+.preview-image-container {
+  position: relative;
+  width: max-content;
+}
+.preview-image-container .btn-delete-image {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.preview-image {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--color-blue);
+}
+/* End Preview Image */

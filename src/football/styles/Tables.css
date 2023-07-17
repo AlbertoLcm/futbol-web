@@ -1,0 +1,17 @@
+.table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.table-list .button-edit{
+  margin-right: 1rem;
+  height: 3rem;
+  background-color: var(--color-blue);
+}
+
+.table-list .button-delete{
+  margin-right: 1rem;
+  height: 3rem;
+  background-color: tomato;
+}

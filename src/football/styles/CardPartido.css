@@ -1,0 +1,117 @@
+.overflow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overflow .buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.overflow .button-edit, .overflow .button-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card-partido {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray);
+  border-radius: 1rem;
+  padding: 1rem;
+  border-left: 0.5rem solid var(--color-blue);
+  border-right: 0.5rem solid tomato;
+}
+
+
+.card-partido::before {
+  content: "Local";
+  font-size: 8rem;
+  font-weight: 800;
+  color: #f3f3f30a;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-partido::after {
+  content: "Visitante";
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 8rem;
+  font-weight: 800;
+  color: #f3f3f30a;
+}
+
+.card-partido .fecha {
+  color: #f3f3f362;
+  text-align: center;
+}
+
+.card-partido .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-partido .content .equipo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.card-partido .content .equipo:last-child {
+  align-items: flex-end;
+}
+
+.card-partido .content .equipo-datos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Presidente */
+.card-partido .content .equipo-presidente {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #f3f3f38a;
+}
+.card-partido .content .presidente-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+/* End Presidente */
+
+.card-partido .content .versus{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-partido .content .ft {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f3f3f362
+}
+.card-partido .content .nombre{
+  font-size: 2rem;
+}
+.card-partido .content .goles{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.card-partido .content img {
+  width: 10rem;
+  height: 10rem;
+}
